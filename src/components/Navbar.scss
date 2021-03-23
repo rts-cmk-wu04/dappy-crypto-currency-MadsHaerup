@@ -4,7 +4,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  margin-top: 1rem;
   &__list{
+    padding-left:2rem;
     grid-gap:1rem;
     display: grid;
     align-items: center;

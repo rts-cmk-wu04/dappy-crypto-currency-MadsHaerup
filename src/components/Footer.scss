@@ -1,0 +1,61 @@
+@import '../variables';
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  color: $primaryColor;
+  margin-left: 2rem;
+&__container{
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: start;
+  // line-height: 2rem;
+  
+  &__list{
+    list-style: none;
+    margin:0;
+    padding:0;
+    text-transform: capitalize;
+    &__items{
+      padding-bottom: 1rem;
+      &:last-of-type{
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__titel{
+    font-weight: 900;
+    text-transform: capitalize;
+    margin:0;
+    margin-bottom: 0.5rem;
+    color: $secondaryColor;
+  }
+  &__text{
+    margin:0;
+    padding-bottom:2rem;
+
+  }
+  &__link{
+    text-decoration: none;
+    color:$primaryColor;
+    padding-bottom:2rem;
+  }
+  &__subscribe{
+    display: flex;
+    &__button{
+      background-color: $btnColor;
+      color:#fff;
+      border:none;
+      border-top-right-radius:6px;
+      border-bottom-right-radius: 6px;
+      padding:0.8rem 2rem;
+    }
+    &__input{
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border: 1px solid $primaryColor;
+    }
+    
+  }
+}
+}
