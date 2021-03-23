@@ -1,0 +1,30 @@
+@import './variables.scss';
+.app{
+  background-color: $backgroundColor;
+
+  &__leftCornerCloud{
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  &__rightCornerCloud{
+    position: absolute;
+    bottom:0;
+    right:0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12,1fr);
+    &__right{
+      z-index: 0;
+      grid-area: 1/3/-1/-1;
+      width:100%;
+      height:100%;
+    }
+    &__left{
+      z-index: 1;
+      grid-area: 9/1/-1/-1;
+
+     
+    }
+  }
+}
