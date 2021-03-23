@@ -1,0 +1,25 @@
+@import '../variables';
+
+.primaryNav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  &__list{
+    grid-gap:1rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    white-space: nowrap;
+    &__link{
+      list-style: none;
+      place-self: center;
+      a{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: $secondaryColor;
+      }
+
+    }
+  }
+}

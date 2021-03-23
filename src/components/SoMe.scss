@@ -1,0 +1,18 @@
+@import '../variables.scss';
+
+.soMe{
+  display: flex;
+  justify-self: end;
+  margin-right:2rem;
+  align-items: center;
+  &__link{
+    font-size:1.5rem;
+    text-decoration: none;
+    color: $contrast;
+    border-radius: 50%;
+    background-color: $secondaryColor;
+    padding: 0.05em 0.2em;
+    margin-left: 1rem;
+  }
+  
+}
