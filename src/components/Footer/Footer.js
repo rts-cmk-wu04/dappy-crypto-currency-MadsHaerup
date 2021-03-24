@@ -1,5 +1,6 @@
 import React from "react";
-import SoMe from "./SoMe";
+import SoMe from "../SoMe";
+import Form from "../validation/Form";
 import "./Footer.scss";
 
 export default function Footer() {
@@ -27,10 +28,7 @@ export default function Footer() {
 			<div className="footer__container">
 				<p className="footer__container__titel">newsletter</p>
 				<p className="footer__container__text">Please enter your e-mail if want to receive updates.</p>
-				<div className="footer__container__subscribe">
-					<input className="footer__container__subscribe__input" type="text" name="" id="" placeholder="Your e-mail" />
-					<button className="footer__container__subscribe__button">subscribe</button>
-				</div>
+				<Form />
 			</div>
 		</footer>
 	);

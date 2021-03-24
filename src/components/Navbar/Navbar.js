@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.scss";
-import logo from "../img/logo.svg";
-import SoMe from "./SoMe";
+import logo from "./logo.svg";
+import SoMe from "../SoMe";
 
 export default function Navbar() {
 	return (
