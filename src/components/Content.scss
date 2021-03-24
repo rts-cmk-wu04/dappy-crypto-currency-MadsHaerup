@@ -1,0 +1,54 @@
+@import "../variables";
+.content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	justify-items: center;
+	grid-gap: 1rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+
+	&__container {
+		h1 {
+			justify-self: start;
+			font-weight: 900;
+			margin-left: 2rem;
+			font-size: 1.5rem;
+		}
+		&:first-of-type {
+			grid-area: 1/1/2/2;
+			line-height: 1.8rem;
+			align-items: center;
+		}
+		&:nth-child(2) {
+			grid-area: 1/2/3/-1;
+		}
+		&:nth-child(3) {
+			grid-area: 2/1/4/2;
+		}
+		&:nth-child(4) {
+			grid-area: 3/2/5/-1;
+		}
+		&:nth-child(5) {
+			grid-area: 4/1/-1/2;
+		}
+		&:nth-child(6) {
+			grid-area: 5/2/-1/-1;
+		}
+	}
+
+	article {
+		background-color: $secondaryBackground;
+		// background-color: black;
+		width: 100%;
+		display: grid;
+		justify-items: center;
+
+		&:first-of-type {
+			justify-items: start;
+			p {
+				padding-left: 2rem;
+			}
+		}
+	}
+}

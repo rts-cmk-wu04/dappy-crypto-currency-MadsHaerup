@@ -1,0 +1,14 @@
+@import "../variables";
+
+.roadmap {
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
+
+	&__textBlock {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 80%;
+		grid-gap: 2rem;
+	}
+}
