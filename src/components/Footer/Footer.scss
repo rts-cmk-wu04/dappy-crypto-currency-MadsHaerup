@@ -6,13 +6,11 @@
 	color: $primaryColor;
 	margin-left: 2rem;
 	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 100px;
 	&__container {
 		display: grid;
 		grid-template-columns: 1fr;
 		place-items: start;
-		// line-height: 2rem;
-
 		&__list {
 			list-style: none;
 			margin: 0;
@@ -29,7 +27,7 @@
 			font-weight: 900;
 			text-transform: capitalize;
 			margin: 0;
-			margin-bottom: 0.5rem;
+			margin-bottom: 1rem;
 			color: $secondaryColor;
 		}
 		&__text {
