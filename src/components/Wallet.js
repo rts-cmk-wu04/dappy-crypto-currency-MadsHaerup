@@ -18,7 +18,7 @@ export default function Wallet() {
 				<button
 					className="wallet__create__button"
 					//eslint-disable-next-line
-					onClick={() => gtag("event", "select_content", { "content_type": heading, "test-type": "B" })}>
+					onClick={() => gtag("event", "select_content", { "content_type": "create-wallet-button", "test-type": "B" })}>
 					create wallet
 				</button>
 			</div>
