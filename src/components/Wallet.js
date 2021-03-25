@@ -15,7 +15,12 @@ export default function Wallet() {
 					The easiest way to manage
 					<br /> multiple cryptocurrency assets
 				</p>
-				<button className="wallet__create__button">create wallet</button>
+				<button
+					className="wallet__create__button"
+					//eslint-disable-next-line
+					onClick={() => gtag("event", "select_content", { "content_type": heading, "test-type": "A" })}>
+					create wallet
+				</button>
 			</div>
 			<div className="wallet__image">
 				<img src={wallet} alt="wallet" />
